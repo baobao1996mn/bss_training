@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "435765370064",
+    "firebase_url": "https://fir-ex-c1095.firebaseio.com",
+    "project_id": "fir-ex-c1095",
+    "storage_bucket": "fir-ex-c1095.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435765370064:android:97bb95388b9e121c",
+        "android_client_info": {
+          "package_name": "com.beesightsoft.training6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435765370064-n6uoa7n88omkn80f2p7hihampugq092r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beesightsoft.training6",
+            "certificate_hash": "d7046a947b30ec4eb5cf398a373d1623066c2506"
+          }
+        },
+        {
+          "client_id": "435765370064-8dc4bfsjc4vekf1dm4v9q7carsus83k8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "435765370064-8dc4bfsjc4vekf1dm4v9q7carsus83k8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo7r_uUJUr8FjaNq0bQHR2rUeGGERyKOg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435765370064-8dc4bfsjc4vekf1dm4v9q7carsus83k8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435765370064:android:7845a2058dc55941",
+        "android_client_info": {
+          "package_name": "com.example.pcpv.authenticationex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435765370064-7c12t9gdkh63c0b4fk9kr36v1bdhvlin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pcpv.authenticationex",
+            "certificate_hash": "d7046a947b30ec4eb5cf398a373d1623066c2506"
+          }
+        },
+        {
+          "client_id": "435765370064-8dc4bfsjc4vekf1dm4v9q7carsus83k8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "435765370064-8dc4bfsjc4vekf1dm4v9q7carsus83k8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo7r_uUJUr8FjaNq0bQHR2rUeGGERyKOg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435765370064-8dc4bfsjc4vekf1dm4v9q7carsus83k8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

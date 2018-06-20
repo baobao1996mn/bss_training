@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Training6</string>
     <string name="facebook_app_id">771145189736924</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">8YMlQDEBURu8QS6efWdIxnfUt</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">mnuRERAGCR7YutXT3GXVRqvnirbQSLZgoWAEhsYLfy3oG2zbid</string>
 </resources>

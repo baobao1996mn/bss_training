@@ -81,12 +81,16 @@ buildscript {
                 saripaar          : "com.mobsandgeeks:android-saripaar:${saripaarVersion}",
                 switchButton      : "com.kyleduo.switchbutton:library:${switchButtonVersion}",
                 maskedEditText    : "com.github.santalu:mask-edittext:${maskedEditTextVersion}",
+
                 //Google play services
                 playServicesMaps     : "com.google.android.gms:play-services-maps:${playServicesVersion}",
                 playServicesMapsUtils: "com.google.maps.android:android-maps-utils:${mapsUtilsVersion}",
                 playServicesLocation : "com.google.android.gms:play-services-location:${playServicesVersion}",
                 playServicesPlaces   : "com.google.android.gms:play-services-places:${playServicesVersion}",
                 playServicesGcm      : "com.google.android.gms:play-services-gcm:${playServicesVersion}",
+                playServicesAuth      : "com.google.android.gms:play-services-auth:${playServicesVersion}",
+                playServicesPlus      : "com.google.android.gms:play-services-plus:${playServicesVersion}",
+
                 threeten             : "com.jakewharton.threetenabp:threetenabp:${threetenVersion}",
                 cicerone             : "ru.terrakok.cicerone:cicerone:${ciceroneVersion}",
                 hawk                 : "com.github.orhanobut:hawk:${hawkVersion}",
@@ -101,12 +105,14 @@ buildscript {
         mavenCentral()
         google()
         maven { url "https://maven.google.com" }
+        maven { url "https://jitpack.io" }
     }
 
     dependencies {
         classpath project.ext.plugins.androidPlugin
         classpath project.ext.plugins.realm
         classpath project.ext.plugins.picker
+        classpath 'com.google.gms:google-services:3.1.1'
     }
 
 }

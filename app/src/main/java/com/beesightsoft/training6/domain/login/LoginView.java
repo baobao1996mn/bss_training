@@ -10,4 +10,6 @@ public interface LoginView extends MvpView {
     void hideLoading();
     void onGetCommentsSuccessful(List<Comment> comments);
     void onGetCommentsFailed(Throwable throwable);
+    void onInsertCommentSuccessful(Comment comment);
+    void onInsertCommentFailed(Throwable throwable);
 }

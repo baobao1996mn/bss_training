@@ -1,6 +1,9 @@
 package com.beesightsoft.training6.domain.login;
 
+import android.widget.Toast;
+
 import com.beesightsoft.training6.service.comment.RestCommentService;
+import com.beesightsoft.training6.service.model.Comment;
 import com.hannesdorfmann.mosby.mvp.MvpBasePresenter;
 
 import javax.inject.Inject;
@@ -38,4 +41,38 @@ public class LoginPresenter extends MvpBasePresenter<LoginView> {
                     }
                 });
     }
+
+
+    //todo add item
+    void addComment() {
+        //todo fake data
+        Comment comment = new Comment();
+        comment.setId("501");
+        comment.setBody("Đây là body");
+        comment.setName("BaoBao");
+        comment.setNiceEmail("baobaobaobao@gmail.com");
+        comment.setPostId("101");
+
+        getView().showLoading();
+        restCommentService.insertCommentUseRx(comment)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .doOnTerminate(() -> {
+                    if (isViewAttached()) {
+                        getView().hideLoading();
+                    }
+                })
+                .subscribe(commentReuslt -> {
+                            if (isViewAttached()) {
+                                getView().onInsertCommentSuccessful(commentReuslt);
+                            }
+                        }, throwable -> {
+                            if (isViewAttached()) {
+                                getView().onInsertCommentFailed(throwable);
+                            }
+                        }
+                );
+    }
+
+
 }

@@ -104,6 +104,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //testing dependencies
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.google.firebase:firebase-auth:11.6.0'
     androidTestImplementation(projectDependencies.espresso, {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -145,6 +146,13 @@ dependencies {
     implementation projectDependencies.mixPanel
     implementation 'com.facebook.android:facebook-android-sdk:4.24.0'
     implementation projectDependencies.twitterSdk
+    implementation 'in.championswimmer:Android-SocialButtons:1.5.0'
+    implementation projectDependencies.playServicesPlus
+    implementation projectDependencies.playServicesAuth
+    implementation "com.mikepenz:iconics-core:3.0.4@aar"
+    implementation 'com.mikepenz:fontawesome-typeface:5.0.13.0@aar'
+//    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.2'
+    implementation group: 'commons-httpclient', name: 'commons-httpclient', version: '3.1'
 
     annotationProcessor projectDependencies.daggerCompiler
     annotationProcessor projectDependencies.androidAnnotations
@@ -166,3 +174,5 @@ configurations.all {
     }
 }
 apply plugin: 'realm-android'
+
+apply plugin: 'com.google.gms.google-services'

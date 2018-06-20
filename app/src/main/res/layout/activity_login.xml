@@ -1,28 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.beesightsoft.training6.domain.login.LoginActivity">
 
-    <TextView
-        android:id="@+id/activity_login_tv_content"
-        android:layout_width="wrap_content"
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_login_recycler_view_comments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Abc"
-        android:layout_centerInParent="true"
-        android:textColor="@color/colorPrimary"
-        />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <in.championswimmer.libsocialbuttons.SocialFab
+                android:id="@+id/activity_login_btn_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Login with Facebook"
+                app:social="facebook" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <in.championswimmer.libsocialbuttons.SocialFab
+                android:id="@+id/activity_login_btn_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Login with Twitter"
+                app:social="twitter" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <in.championswimmer.libsocialbuttons.SocialFab
+                android:id="@+id/activity_login_btn_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Login with Google"
+                app:social="google" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
     <Button
-        android:id="@+id/activity_login_btn_fb"
-        android:layout_width="wrap_content"
+        android:id="@+id/activity_login_btn_http_example"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:text="Login with facebook"/>
-
-</RelativeLayout>
+        android:text="Http Example" />
+</LinearLayout>
